@@ -74,8 +74,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'user.wsgi.application'
-SOCIAL_AUTH_FACEBOOK_KEY = '1752400008441351'  # App ID
-SOCIAL_AUTH_FACEBOOK_SECRET = '421ccb55609416326297c5526fd22c5f'  # App Secret
+SOCIAL_AUTH_FACEBOOK_KEY = ''  # App ID
+SOCIAL_AUTH_FACEBOOK_SECRET = ''  # App Secret
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
