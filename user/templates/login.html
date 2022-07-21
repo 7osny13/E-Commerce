@@ -1,0 +1,94 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="{% static 'login.css'%}">
+<script src="{% static 'login.js'%}"></script>
+
+</head>
+<body>
+    <section class="vh-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6 text-black">
+      
+              <!-- <div class="px-5 ms-xl-4">
+                <i class="fas fa-crow fa-2x me-3 pt-5 mt-xl-4" style="color: #709085;"></i>
+                <span class="h1 fw-bold mb-0">Logo</span>
+              </div> -->
+      
+              <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+      
+                <form style="width: 23rem;" action="/login" method="post"  >
+                  {% csrf_token %}
+                  <h1 class="mylog" class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Login</h1>
+                  
+                 
+                  
+                  <div class="form-outline mb-4">
+                    <input type="email" name="email" id="form2Example18" class="form-control form-control-lg" placeholder="E-mail"/>
+                    <!-- <label class="form-label" for="form2Example18">Email address</label> -->
+                  </div>
+      
+                  <div class="form-outline mb-4">
+                    <input type="password" name="password" id="form2Example28" class="form-control form-control-lg" placeholder="Password" />
+                    <!-- <label class="form-label" for="form2Example28">Password</label> -->
+                  </div>
+      
+                  <!-- <div class="remem" class="-df -j-bet -i-base">
+                    <div class="forgot" class="fi-w _cb _ha">
+                        <input type="checkbox" value="lsRememberMe" id="rememberMe" name="checkbox" onclick="saveName()" >
+                    <label  for="rememberMe">Remember me</label>
+                </div> -->
+                <div class="remem" class="-df -j-bet -i-base">
+                  <div  class="fi-w _cb _ha">
+                      <input type="checkbox" value="lsRememberMe" id="rememberMe" name="checkbox" onclick="saveName()">
+                  <label for="rememberMe">Remember me</label>
+              </div>
+
+                  <a class="_link -or5 -m -tar -mtm -mbl" href="forgot.html">Forgot your password?</a>
+                  </div>
+
+                  <a class="alog" class="btn _prim _i -mtxl" href=""><svg viewBox="0 0 24 24" class="ic" width="24" height="24"></svg>
+                    <!-- <span>Login</span> -->
+                    <button type="submit" class="btn btn-link" >Login</button>
+
+                  </a>
+
+                        <a class="logfeac" href="{% url 'social:begin' 'facebook' %}">
+                            <svg viewBox="0 0 24 24" class="ic" width="24" height="24">
+                            </svg>
+                            <span>Login with Facebook</span></a>     
+                </form>
+      
+              </div>
+      
+            </div>
+            <div class="col-sm-6 px-0 d-none d-sm-block">
+                <div class="d-flex align-items-center h-custom-2 px-5 ms-xl-4 mt-5 pt-5 pt-xl-0 mt-xl-n5">
+                    
+                    <div class="reslog" class="col12 -d-co -df">
+                        <div class="creat" class="-flupp -or5 -tac -b -fs20 -mbxl">Create your Jumia account</div>
+                        <p class="pmylog" class="-fs16 -lh-15 -fg1 -ptm">Create your Jumia customer account in just a few clicks! You can register either using your e-mail address or through your Facebook account. </p>
+                        <a class="alog" class="btn _prim _i -mtxl" href="http://127.0.0.1:8000/Register"><svg viewBox="0 0 24 24" class="ic" width="24" height="24"></svg>
+                            <span>Create an account via e-mail</span></a>
+                        <a class="a2log" class="btn _fb _i -mtl" href="http://127.0.0.1:8000/Registerfacebook">
+                            <svg viewBox="0 0 24 24" class="ic" width="24" height="24">
+                            </svg>
+                            <span>Register with Facebook</span></a>
+                    </div>
+              </div> 
+          </div>
+        </div>
+      </section>
+</body>
+</html>

@@ -1,0 +1,267 @@
+.bg-image-vertical {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto 100%;
+    }
+    
+    @media (min-width: 1025px) {
+    .h-custom-2 {
+    height: 100%;
+    }
+    }
+
+
+.mylog{
+    -webkit-text-size-adjust: 100%;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: #f68b1e;
+    margin-bottom: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.25rem;
+}  
+
+
+.pmylog{
+    -webkit-text-size-adjust: 100%;
+    color: #282828;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    padding-top: 16px;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.reslog{
+    -webkit-text-size-adjust: 100%;
+    color: #282828;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-size: .875rem;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    padding-right: 8px;
+    padding-left: 8px;
+    flex-basis: 75%;
+    max-width: 75%;
+    min-width: 75%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.creat{
+-webkit-text-size-adjust: 100%;
+font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+-webkit-font-smoothing: antialiased;
+direction: ltr;
+box-sizing: border-box;
+color: #f68b1e;
+margin-bottom: 32px;
+font-weight: 700;
+text-align: center;
+font-size: 1.25rem;
+}
+
+
+.alog{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    background-color: #f68b1e;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transform: translateZ(0);
+    margin-top: 32px;
+}
+
+.a2log{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #40588a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transform: translateZ(0);
+    margin-top: 24px;
+}
+
+.remem{
+    -webkit-text-size-adjust: 100%;
+    color: #282828;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-size: .875rem;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.forgot{
+    -webkit-text-size-adjust: 100%;
+    color: #282828;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    position: relative;
+    padding-bottom: 20px;
+    line-height: 1.4;
+    font-size: 0;
+    height: auto;
+    padding-left: 32px;
+    padding-top: 12px;
+}
+
+
+
+.loginn{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-appearance: button;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    background-color: #f68b1e;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transform: translateZ(0);
+    margin-top: 8px;
+}
+
+.svglog{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    color: #fff;
+    width: 24;
+    height: 24;
+    box-sizing: border-box;
+    fill: #fff;
+    flex-shrink: 0;
+}
+
+.spanlog{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    color: #fff;
+    box-sizing: border-box;
+    padding-right: 24px;
+    margin: 0 auto;
+}
+
+.logfeac{
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    direction: ltr;
+    box-sizing: border-box;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 0;
+    outline: 0;
+    padding: 16px;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica Neue,Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1rem;
+    font-size: .875rem;
+    cursor: pointer;
+    color: #fff;
+    background-color: #40588a;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,.2);
+    padding-top: 12px;
+    padding-bottom: 12px;
+    transform: translateZ(0);
+    margin-top: 24px;
+}
+
+

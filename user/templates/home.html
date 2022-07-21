@@ -1,0 +1,26 @@
+{%load static%}
+<html>
+
+<head>
+  <script src="{% static 'home.js'%}"></script>
+
+</head>
+<body>
+
+
+  <p>welcome {{ user.username }}{{request.session.username}}</p>
+  
+
+  <div class="card" style="width: 18rem;" id="div">
+    <img src="" id='img' class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text" id="1"></p>
+      <p class="card-text" id="2"></p>
+      <p class="card-text" id="3"></p>
+
+    </div>
+  </div>
+</body>
+</html>
+
+
