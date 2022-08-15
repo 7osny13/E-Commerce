@@ -1,30 +1,30 @@
 
-#run Django
+#run Django <br />
 
-pip install -r requirements.txt
-python manage.py runserver
+pip install -r requirements.txt <br />
+python manage.py runserver <br />
 ====================================
-#run react 
+#run react  <br />
 
-npm install
-npm start
+npm install <br />
+npm start <br />
 ====================================
-#how to integrate react int django
+#how to integrate react int django <br />
 
-1-import os in settings.py (django app)
-2-in DIRS which inside TEMPLPATES add this line : os.path.join(BASE_DIR, 'frontend/build')
-3-in STATICFILES_DIRS add this line : BASE_DIR / 'frontend/build/static'
+1-import os in settings.py (django app) <br />
+2-in DIRS which inside TEMPLPATES add this line : os.path.join(BASE_DIR, 'frontend/build') <br />
+3-in STATICFILES_DIRS add this line : BASE_DIR / 'frontend/build/static' <br />
 ====================================
-#references
+#references <br />
 
-*Integrate React Into  Django
-https://www.youtube.com/watch?v=FhkqMHxchZ8&feature=youtu.be
+*Integrate React Into  Django <br />
+https://www.youtube.com/watch?v=FhkqMHxchZ8&feature=youtu.be <br />
 
-*contact
-https://www.youtube.com/watch?v=PGyeSW6c0cA
+*contact <br />
+https://www.youtube.com/watch?v=PGyeSW6c0cA <br />
 
-*chat
-https://www.youtube.com/watch?v=0z7CX5UWZp8&t=30s
+*chat <br />
+https://www.youtube.com/watch?v=0z7CX5UWZp8&t=30s <br />
 
 
 
