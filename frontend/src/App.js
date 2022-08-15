@@ -16,6 +16,12 @@ import UserListScreen from './screens/UserListScreen'
 import UserEditScreen from './screens/UserEditScreen'
 import ProductListScreen from './screens/ProductListScreen'
 import ProductEditScreen from './screens/ProductEditScreen'
+import ProductListScreenc from './screens/ProductListScreenc'
+import ProductEditScreenc from './screens/ProductEditScreenc'
+import ProductEditScreencc from './screens/ProductEditScreencc'
+
+
+
 import OrderListScreen from './screens/OrderListScreen'
 import WishlistScreen from './screens/WishlistScreen';
 import Collections from './screens/Collections';
@@ -69,6 +75,11 @@ function App() {
 
           <Route path='/admin/productlist' component={ProductListScreen} />
           <Route path='/admin/product/:id/edit' component={ProductEditScreen} />
+
+          <Route path='/productlistc' component={ProductListScreenc} />
+          <Route path='/products/:id/add' component={ProductEditScreenc} />
+          <Route path='/products/:id/edit' component={ProductEditScreencc} />
+
 
           <Route path='/admin/orderlist' component={OrderListScreen} />
         </Container>

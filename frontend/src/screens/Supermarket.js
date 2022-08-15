@@ -45,6 +45,8 @@ function Supermarket() {
   
       return (
         <div className="row">
+                <div style={{height: "100px"}}></div>
+
           <h5> {catgory} </h5>
           <div className="grid1 ">
           {content}</div>

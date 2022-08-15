@@ -27,6 +27,8 @@ function WishlistScreen({ match, location, history }) {
 
     return (
         <Row>
+                  <div style={{height: "100px"}}></div>
+
             <Col md={8}>
                 <h1>Shopping Wishlist</h1>
                 {WishlistItems.length === 0 ? (

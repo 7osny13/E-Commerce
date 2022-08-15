@@ -22,16 +22,16 @@ function ProductCarousel() {
         : error
             ? <Message variant='danger'>{error}</Message>
             : (<div className='row'>
-                <div className='col-2 '>
+                <div className='col-md-2 '>
                 <h4>
-                 Categories <i className='fa fa-chevron-down'></i>
+                 Categories <i className='fa fa-chevron-down my-3'></i>
                 </h4>
                 <Category />
                 
     
               </div>
               <div className='col-1'></div>
-                <Carousel pause='hover' className='bg-dark col-9'>
+                <Carousel pause='hover' className='bg-dark col-md-9'>
              
                     {products.map(product => (
                         <Carousel.Item key={product._id} className=''>

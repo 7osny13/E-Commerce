@@ -45,12 +45,12 @@ const CategoryScreen = () => {
         ]
         return (
         <>
-        <section className='wrapper card-group d-flex flex-row mb-2'>
-        <div className='container d-flex flex-row mb-4'>
+        {/* <section className='wrapper card-group d-flex flex-row mb-2'> */}
+        <div className='card-group'>
                 {data.map((val, index) => {
                 return (
-                <div className='product card ms-4' key={index}>
-                <div className='img icon-circle'>
+                <div className='card ms-4' key={index}>
+                <div className='card-img-top'>
                 <Link to={`/${val.link}`} className='nam' >
 
                 <img src={val.cover} alt='category' width='300px' className="fluid img"/>
@@ -58,13 +58,13 @@ const CategoryScreen = () => {
                                 </div>
                 <Link to={`/${val.link}`} className='nam' >
 
-                <i>{val.name}</i>
+                <i className="card-title text-center ms-4">{val.name}</i>
                 </Link>
                 </div>
                 )
                 })}
         </div>
-        </section>
+        {/* </section> */}
         </>
         )
 }

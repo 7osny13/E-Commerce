@@ -31,6 +31,8 @@ function LoginScreen({ location, history }) {
 
     return (
         <FormContainer>
+                              <div style={{height: "100px"}}></div>
+
             <h1>Sign In</h1>
             {error && <Message variant='danger'>{error}</Message>}
             {loading && <Loader />}
@@ -78,3 +80,4 @@ function LoginScreen({ location, history }) {
 }
 
 export default LoginScreen
+

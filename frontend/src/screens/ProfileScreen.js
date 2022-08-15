@@ -65,6 +65,8 @@ function ProfileScreen({ history }) {
     }
     return (
         <Row>
+                              <div style={{height: "100px"}}></div>
+
             <Col md={3}>
                 <h2>User Profile</h2>
 

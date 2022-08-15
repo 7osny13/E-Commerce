@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState} from 'react'
 import { Form, Button, Col } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
 import FormContainer from '../components/FormContainer'
@@ -26,6 +26,8 @@ function PaymentScreen({ history }) {
 
     return (
         <FormContainer>
+                              <div style={{height: "100px"}}></div>
+
             <CheckoutSteps step1 step2 step3 />
 
             <Form onSubmit={submitHandler}>
@@ -45,7 +47,7 @@ function PaymentScreen({ history }) {
                     </Col>
                 </Form.Group>
 
-                <Button type='submit' variant='primary'>
+                <Button type='submit' variant='dark' className='my-2'>
                     Continue
                 </Button>
             </Form>

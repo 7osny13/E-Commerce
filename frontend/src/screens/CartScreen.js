@@ -30,6 +30,8 @@ function CartScreen({ match, location, history }) {
 
     return (
         <Row>
+                              <div style={{height: "100px"}}></div>
+
             <Col md={8}>
                 <h1>Shopping Cart</h1>
                 {cartItems.length === 0 ? (

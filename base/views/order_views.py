@@ -56,7 +56,7 @@ def addOrderItems(request):
                 image=product.image.url,
             )
 
-            # (4) Update stock
+            # 4 Update stock
 
             product.countInStock -= item.qty
             product.save()

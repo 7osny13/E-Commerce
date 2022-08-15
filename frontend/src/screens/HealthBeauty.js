@@ -55,6 +55,7 @@ function HealthBeauty() {
 
     return (
         <div className="HealthBeauty">
+                  <div style={{height: "100px"}}></div>
 
       <div className="row">
         <BuildList catgory='HealthBeauty' />

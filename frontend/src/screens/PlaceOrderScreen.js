@@ -48,6 +48,8 @@ function PlaceOrderScreen({ history }) {
 
     return (
         <div>
+                              <div style={{height: "100px"}}></div>
+
             <CheckoutSteps step1 step2 step3 step4 />
             <Row>
                 <Col md={8}>
@@ -147,7 +149,7 @@ function PlaceOrderScreen({ history }) {
                             <ListGroup.Item>
                                 <Button
                                     type='button'
-                                    className='btn-block'
+                                    className='btn-dark'
                                     disabled={cart.cartItems === 0}
                                     onClick={placeOrder}
                                 >

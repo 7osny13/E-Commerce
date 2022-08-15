@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { Row, Col } from 'react-bootstrap'
-import Product from '../components/Product'
+// import { Row, Col } from 'react-bootstrap'
+// import Product from '../components/Product'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
-import Paginate from '../components/Paginate'
+// import Paginate from '../components/Paginate'
 import ProductCarousel from '../components/ProductCarousel'
 import { listProducts } from '../actions/productActions'
-import SlideCard from '../components/SlideCard';
+// import SlideCard from '../components/SlideCard';
 import Wrapper from '../wrapper/Wrapper'
 import TopCate from '../top/TopCate'
 import FlashDeals from '../flashDeals/FlashDeals'
-import Shop from '../shops/Shop'
+// import Shop from '../shops/Shop'
 import FashionScreen from '../components/Fasionscreen'
 import CategoryScreen from '../components/CategoryScreen'
 
@@ -32,7 +32,8 @@ function HomeScreen({ history }) {
 
     return (
         <div>
-            
+                        <div style={{height: "90px"}}></div>
+
             {!keyword && <ProductCarousel />}
             <div style={{height: "30px"}}></div>
             <FlashDeals />

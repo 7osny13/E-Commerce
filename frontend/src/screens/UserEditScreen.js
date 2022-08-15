@@ -49,6 +49,8 @@ function UserEditScreen({ match, history }) {
 
     return (
         <div>
+                  <div style={{height: "120px"}}></div>
+
             <Link to='/admin/userlist'>
                 Go Back
             </Link>

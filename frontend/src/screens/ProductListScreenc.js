@@ -8,6 +8,9 @@ import Paginate from '../components/Paginate'
 import { listProducts, deleteProduct, createProduct } from '../actions/productActions'
 import { PRODUCT_CREATE_RESET } from '../constants/productConstants'
 
+
+
+
 function ProductListScreen({ history, match }) {
 
     const dispatch = useDispatch()
@@ -29,12 +32,10 @@ function ProductListScreen({ history, match }) {
     useEffect(() => {
         dispatch({ type: PRODUCT_CREATE_RESET })
 
-        if (!userInfo.isAdmin) {
-            history.push('/login')
-        }
+
 
         if (successCreate) {
-            history.push(`/admin/product/${createdProduct._id}/edit`)
+            history.push(`/products/${createdProduct._id}/add`)
         } else {
             dispatch(listProducts(keyword))
         }
@@ -53,6 +54,8 @@ function ProductListScreen({ history, match }) {
         dispatch(createProduct())
     }
 
+
+
     return (
         <div>
                               <div style={{height: "80px"}}></div>
@@ -63,8 +66,8 @@ function ProductListScreen({ history, match }) {
                 </Col>
 
                 <Col className='text-right'>
-                    <Button className='my-3 btn-dark' onClick={createProductHandler}>
-                        <i className='fas fa-plus'></i> Create Product
+                    <Button className='my-3 btn-dark' onClick={createProductHandler} >
+                        <i className='fas fa-plus'></i> Create Products
                     </Button>
                 </Col>
             </Row>
@@ -82,12 +85,12 @@ function ProductListScreen({ history, match }) {
                     ? (<Message variant='danger'>{error}</Message>)
                     : (
                         <div>
-                            <Table striped bordered hover responsive className='table-sm'>
+                             <Table striped bordered hover responsive className='table-sm'>
                                 <thead>
                                     <tr>
                                         <th>ID</th>
                                         <th>NAME</th>
-                                        <th>UserID</th>
+
                                         <th>PRICE</th>
                                         <th>CATEGORY</th>
                                         <th>BRAND</th>
@@ -96,17 +99,21 @@ function ProductListScreen({ history, match }) {
                                 </thead>
 
                                 <tbody>
-                                    {products.map(product => (
+
+                                    {products.map(product =>
+
+                                       (
+                                         product?.user === userInfo?._id )&&(
                                         <tr key={product._id}>
                                             <td>{product._id}</td>
                                             <td>{product.name}</td>
-                                            <td>{product.user}</td>
+
                                             <td>${product.price}</td>
                                             <td>{product.category}</td>
                                             <td>{product.brand}</td>
 
                                             <td>
-                                                <LinkContainer to={`/admin/product/${product._id}/edit`}>
+                                                <LinkContainer to={`/products/${product._id}/edit`}>
                                                     <Button variant='light' className='btn-sm'>
                                                         <i className='fas fa-edit'></i>
                                                     </Button>
@@ -117,11 +124,13 @@ function ProductListScreen({ history, match }) {
                                                 </Button>
                                             </td>
                                         </tr>
+
                                     ))}
                                 </tbody>
                             </Table>
-                            {/* <Paginate pages={pages} page={page} isAdmin={true} /> */}
+                            <Paginate pages={pages} page={page}  />
                         </div>
+
                     )}
         </div>
     )

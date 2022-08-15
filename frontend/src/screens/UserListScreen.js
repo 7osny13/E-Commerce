@@ -39,6 +39,8 @@ function UserListScreen({ history }) {
 
     return (
         <div>
+                  <div style={{height: "120px"}}></div>
+
             <h1>Users</h1>
             {loading
                 ? (<Loader />)
@@ -65,7 +67,10 @@ function UserListScreen({ history }) {
                                         <td>{user.isAdmin ? (
                                             <i className='fas fa-check' style={{ color: 'green' }}></i>
                                         ) : (
-                                                <i className='fas fa-check' style={{ color: 'red' }}></i>
+                                            // <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+
+                                                // <i className='btn-close  fs-4' ></i>
+                                                <i className='fas fa-times' style={{ color: 'red' }}></i>
                                             )}</td>
 
                                         <td>

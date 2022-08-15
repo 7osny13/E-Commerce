@@ -1,6 +1,7 @@
-import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
-import './style.css'
+import React from 'react';
+import './style.css';
+import { Link } from 'react-router-dom';
+
 // get our fontawesome import
 function Footer() {
     return (
@@ -19,11 +20,11 @@ function Footer() {
               <ul className="contact-details">
                 <li>
                   <span className="icon-earphones"></span> Call Us:
-                  <a href="tel:344-755-111">344-755-111</a>
+                  <Link to="tel:01000778877">01000778877</Link>
                 </li>
                 <li>
                   <span className="icon-envelope-open"></span>
-                  <a href="mailto:support@aazztech.com">support@aazztech.com</a>
+                  <Link to="mailto:Alphashop@alphaStore.com">Alphashop@alphaStore.com</Link>
                 </li>
               </ul>
             </div>
@@ -37,19 +38,19 @@ function Footer() {
               <h4 className="footer-widget-title text-dark">Popular Category</h4>
               <ul>
                 <li>
-                  <a href="/fashion">Fashion</a>
+                  <Link to="/fashion">Fashion</Link>
                 </li>
                 <li>
-                  <a href="/electronuc">Electronics</a>
+                  <Link to="/electronuc">Electronics</Link>
                 </li>
                 <li>
-                  <a href="">Mobiles phones</a>
+                  <Link to="/computing">Mobiles phones</Link>
                 </li>
                 <li>
-                  <a href="#">Computer Screens</a>
+                  <Link to="#">Computer Screens</Link>
                 </li>
                 <li>
-                  <a href="#"></a>
+                  <Link to="#"></Link>
                 </li>
               </ul>
             </div>
@@ -65,25 +66,25 @@ function Footer() {
               <h4 className="footer-widget-title text-dark">Our Company</h4>
               <ul>
                 <li>
-                  <a href="#">About Us</a>
+                  <Link to="#">About Us</Link>
                 </li>
                 <li>
-                  <a href="/contact">Contact US</a>
+                  <Link to="/contact">Contact US</Link>
                 </li>
                 <li>
-                  <a href="#">Affiliates</a>
+                  <Link to="#">Affiliates</Link>
                 </li>
                 <li>
-                  <a href="#">Testimonials</a>
+                  <Link to="#">Testimonials</Link>
                 </li>
                 <li>
-                  <a href="#">Contact Us</a>
+                  <Link to="#">Contact Us</Link>
                 </li>
                 <li>
-                  <a href="#">Plan &amp; Pricing</a>
+                  <Link to="#">Plan &amp; Pricing</Link>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <Link to="#">Blog</Link>
                 </li>
               </ul>
             </div>
@@ -99,25 +100,25 @@ function Footer() {
               <h4 className="footer-widget-title text-dark">Help Support</h4>
               <ul>
                 <li>
-                  <a href="#">Support Forum</a>
+                  <Link to="#">Support Forum</Link>
                 </li>
                 <li>
-                  <a href="#">Terms &amp; Conditions</a>
+                  <Link to="#">Terms &amp; Conditions</Link>
                 </li>
                 <li>
-                  <a href="#">Support Policy</a>
+                  <Link to="#">Support Policy</Link>
                 </li>
                 <li>
-                  <a href="#">Refund Policy</a>
+                  <Link to="#">Refund Policy</Link>
                 </li>
                 <li>
-                  <a href="#">FAQs</a>
+                  <Link to="#">FAQs</Link>
                 </li>
                 <li>
-                  <a href="#">Buyers Faq</a>
+                  <Link to="#">Buyers Faq</Link>
                 </li>
                 <li>
-                  <a href="#">Sellers Faq</a>
+                  <Link to="#">Sellers Faq</Link>
                 </li>
               </ul>
             </div>
@@ -140,8 +141,8 @@ function Footer() {
         <div className="col-md-12">
           <div className="copyright-text">
             <p>© 2022
-              <a href="/">AlphaStore</a>. All rights reserved. Created by
-              <a href="#">AlphaStore Team</a>
+              <Link to="/">AlphaStore</Link>. All rights reserved. Created by
+              <Link to="#">AlphaStore Team</Link>
             </p>
           </div>
 {/* 

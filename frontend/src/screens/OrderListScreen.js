@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, {  useEffect } from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Table, Button } from 'react-bootstrap'
 import { useDispatch, useSelector } from 'react-redux'
@@ -30,6 +30,8 @@ function OrderListScreen({ history }) {
 
     return (
         <div>
+                              <div style={{height: "100px"}}></div>
+
             <h1>Orders</h1>
             {loading
                 ? (<Loader />)
@@ -60,14 +62,16 @@ function OrderListScreen({ history }) {
                                         <td>{order.isPaid ? (
                                             order.paidAt.substring(0, 10)
                                         ) : (
-                                                <i className='fas fa-check' style={{ color: 'red' }}></i>
+                                            <i className='fas fa-times' style={{ color: 'red' }}></i>
+                                                // <i className='fas fa-check' style={{ color: 'red' }}></i>
                                             )}
                                         </td>
 
                                         <td>{order.isDelivered ? (
                                             order.deliveredAt.substring(0, 10)
                                         ) : (
-                                                <i className='fas fa-check' style={{ color: 'red' }}></i>
+                                            <i className='fas fa-times' style={{ color: 'red' }}></i>
+                                                // <i className='fas fa-check' style={{ color: 'red' }}></i>
                                             )}
                                         </td>
 

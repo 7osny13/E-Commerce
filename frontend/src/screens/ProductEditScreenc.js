@@ -10,7 +10,7 @@ import { listProductDetails, updateProduct } from '../actions/productActions'
 import { PRODUCT_UPDATE_RESET } from '../constants/productConstants'
 
 
-function ProductEditScreen({ match, history }) {
+function ProductEditScreenc({ match, history }) {
 
     const productId = match.params.id
 
@@ -36,7 +36,7 @@ function ProductEditScreen({ match, history }) {
 
         if (successUpdate) {
             dispatch({ type: PRODUCT_UPDATE_RESET })
-            history.push('/admin/productlist')
+            history.push('/productlist')
         } else {
             if (!product.name || product._id !== Number(productId)) {
                 dispatch(listProductDetails(productId))
@@ -96,17 +96,19 @@ function ProductEditScreen({ match, history }) {
             setUploading(false)
         }
     }
+    // window.location.hash = "#add";
 
     return (
-        <div>
+        <div >
+
                               <div style={{height: "100px"}}></div>
 
-            <Link to='/admin/productlist' className=' btn btn-dark'>
+            <Link to='/productlist' className='btn btn-dark' id='add'>
                 Go Back
             </Link>
 
             <FormContainer>
-                <h1>Edit Product</h1>
+                <h1 id='edit'>Add Product</h1>
                 {loadingUpdate && <Loader />}
                 {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
 
@@ -213,7 +215,7 @@ function ProductEditScreen({ match, history }) {
 
 
                             <Button type='submit' variant='primary' className='my-3'>
-                                Update
+                               Add Product
                         </Button>
 
                         </Form>
@@ -225,4 +227,4 @@ function ProductEditScreen({ match, history }) {
     )
 }
 
-export default ProductEditScreen
+export default ProductEditScreenc;

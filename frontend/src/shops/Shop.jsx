@@ -50,6 +50,8 @@ const Shop = ({ shopItems }) => {
   return (
     <>
       <section className='shop background row '>
+      <div style={{height: "170px"}}></div>
+
         <div className='container d_flex col-2 '>
         <h4 className="text-danger">Brands | Shop</h4>
 

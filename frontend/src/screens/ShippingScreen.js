@@ -25,6 +25,8 @@ function ShippingScreen({ history }) {
 
     return (
         <FormContainer>
+                  <div style={{height: "120px"}}></div>
+
             <CheckoutSteps step1 step2 />
             <h1>Shipping</h1>
             <Form onSubmit={submitHandler}>
@@ -77,7 +79,7 @@ function ShippingScreen({ history }) {
                     </Form.Control>
                 </Form.Group>
 
-                <Button type='submit' variant='primary'>
+                <Button type='submit' variant='dark' className='my-2'>
                     Continue
                 </Button>
             </Form>
