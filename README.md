@@ -13,7 +13,7 @@ npm start <br />
 
 1-import os in settings.py (django app) <br />
 2-in DIRS which inside TEMPLPATES add this line : os.path.join(BASE_DIR, 'frontend/build') <br />
-3-in STATICFILES_DIRS add this line : BASE_DIR / 'frontend/build/static' <br />
+3-in STATICFILES_DIRS add this line : BASE_DIR / 'frontend/build/static' 
 ====================================
 #references <br />
 
